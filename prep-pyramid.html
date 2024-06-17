@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <style>
+    .pyramid-grid {
+      font-family: 'Sans Source Pro', sans-serif;
+      font-size: 12px;
+    }
+    .pyramid-grid a {
+      text-decoration: none;
+    }
+    .pyramid-desktop {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: .25rem;
+    }
+
+    .pyramid-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pyramid-row:nth-child(1) {
+      max-width: 118px;
+      width: 100%;
+    }
+
+    .pyramid-row:nth-child(2) {
+      max-width: 211px;
+      width: 100%;
+    }
+
+    .pyramid-row:nth-child(3) {
+      max-width: 305px;
+      width: 100%;
+    }
+
+    .pyramid-row:nth-child(4) {
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .pyramid-row:nth-child(5) {
+      max-width: 494px;
+      width: 100%;
+    }
+
+    .pyramid-row:nth-child(6) {
+      max-width: 494px;
+      width: 100%;
+      background: url(https://cdn.shopify.com/s/files/1/0599/4538/6044/files/11_pyramid-bottom-left.png?v=1718148083) left/contain no-repeat, url(https://cdn.shopify.com/s/files/1/0599/4538/6044/files/12_pyramid-bottom-right.png?v=1718148083) right/contain no-repeat;
+    }
+
+    .pyramid-row a {
+      transition: opacity .2s;
+      text-decoration: none;
+    }
+
+    .pyramid-row a:hover {
+      opacity: .7;
+    }
+
+    .pyramid-grid img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .pyramid-base {
+      background-color: #141414;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      max-width: 440px;
+      min-height: 50px;
+    }
+
+    .pyramid-base a {
+      color: white;
+    }
+
+    .pyramid-mobile {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .pyramid-mobile a {
+      display: block;
+      padding: 2rem 0;
+      color: white;
+      border: solid white;
+      border-width: 1px 0;
+    }
+
+    .pyramid-mobile a:nth-child(1) {
+      background-color: #75281e;
+    }
+    .pyramid-mobile a:nth-child(2) {
+      background-color: #9a3a1c;
+    }
+    .pyramid-mobile a:nth-child(3),
+    .pyramid-mobile a:nth-child(4),
+    .pyramid-mobile a:nth-child(5) {
+      background-color: #bb5429;
+    }
+    .pyramid-mobile a:nth-child(6),
+    .pyramid-mobile a:nth-child(7),
+    .pyramid-mobile a:nth-child(8) {
+      background-color: #dd7d39;
+    }
+    
+    .pyramid-mobile a:nth-child(9),
+    .pyramid-mobile a:nth-child(10),
+    .pyramid-mobile a:nth-child(11),
+    .pyramid-mobile a:nth-child(12) {
+      background-color: #131313;
+    }
+
+    @media screen and (min-width: 600px) {
+      .pyramid-desktop {
+        display: flex;
+      }
+
+      .pyramid-mobile {
+        display: none;
+      }
+    }
+  </style>
+  <div class="pyramid-grid">
+    <div class="pyramid-desktop">
+      <div class="pyramid-row">
+        <a href="#" title="Barter Items">
+          <img src="https://cdn.shopify.com/s/files/1/0599/4538/6044/files/00_Barter-Items.png?v=1718148084" alt="Barter Items">
+        </a>
+      </div>
+      <div class="pyramid-row">
+        <a href="#" title="Storage and Organization">
+          <img src="https://cdn.shopify.com/s/files/1/0599/4538/6044/files/01_Storage.png?v=1718148083" alt="Storage and Organization">
+        </a>
+      </div>
+      <div class="pyramid-row">
+        <a href="#" title="Hunting and Home Defense">
+          <img src="https://cdn.shopify.com/s/files/1/0599/4538/6044/files/02_Hunting-and-Defense.png?v=1718148084" alt="Hunting and Home Defense">
+        </a>
+        <a href="#" title="PPE, EMF Protection and Clothing">
+          <img src="https://cdn.shopify.com/s/files/1/0599/4538/6044/files/03_PPE.png?v=1718148084" alt="PPE, EMF Protection and Clothing">
+        </a>
+        <a href="#" title="Camping and Gardening">
+          <img src="https://cdn.shopify.com/s/files/1/0599/4538/6044/files/04_Camping.png?v=1718148083" alt="Camping and Gardening">
+        </a>
+      </div>
+      <div class="pyramid-row">
+        <a href="#" title="Fuel and Power">
+          <img src="https://cdn.shopify.com/s/files/1/0599/4538/6044/files/05_Power.png?v=1718148083" alt="Fuel and Power">
+        </a>
+        <a href="#" title="Medical Supplies and Hygiene">
+          <img src="https://cdn.shopify.com/s/files/1/0599/4538/6044/files/13_Medical.png?v=1718148083" alt="Medical Supplies and Hygiene">
+        </a>
+        <a href="#" title="Tools and Machinery">
+          <img src="https://cdn.shopify.com/s/files/1/0599/4538/6044/files/06_Tools.png?v=1718148083" alt="Tools and Machinery">
+        </a>
+      </div>
+      <div class="pyramid-row">
+        <a href="#" title="Water Purification and Storage">
+          <img src="https://cdn.shopify.com/s/files/1/0599/4538/6044/files/07_Water-Storage.png?v=1718148083" alt="Water Purification and Storage">
+        </a>
+        <a href="#" title="Food and Beverage">
+          <img src="https://cdn.shopify.com/s/files/1/0599/4538/6044/files/08_Food.png?v=1718148083" alt="Food and Beverage">
+        </a>
+        <a href="#" title="Shelter">
+          <img src="https://cdn.shopify.com/s/files/1/0599/4538/6044/files/09_Shelter.png?v=1718148083" alt="Shelter">
+        </a>
+        <a href="#" title="Community and Communications">
+          <img src="https://cdn.shopify.com/s/files/1/0599/4538/6044/files/10_Community.png?v=1718148083" alt="Community and Communications">
+        </a>
+      </div>
+      <div class="pyramid-row">
+        <div class="pyramid-base">
+          <a href="#">Knowledge</a>
+          <a href="#">Supplies</a>
+          <a href="#">Services</a>
+          <a href="#">Community</a>
+        </div>
+      </div>
+    </div>
+    <div class="pyramid-mobile">
+      <a href="#" title="Barter Items">Barter Items</a>
+      <a href="#" title="Storage and Organization">Storage and Organization</a>
+      <a href="#" title="Hunting and Home Defense">Hunting and Home Defense</a>
+      <a href="#" title="PPE, EMF Protection and Clothing">PPE, EMF Protection and Clothing</a>
+      <a href="#" title="Camping and Gardening">Camping and Gardening</a>
+      <a href="#" title="Fuel and Power">Fuel and Power</a>
+      <a href="#" title="Medical Supplies and Hygiene">Medical Supplies and Hygiene</a>
+      <a href="#" title="Tools and Machinery">Tools and Machinery</a>
+      <a href="#" title="Water Purification and Storage">Water Purification and Storage</a>
+      <a href="#" title="Food and Beverage">Food and Beverage</a>
+      <a href="#" title="Shelter">Shelter</a>
+      <a href="#" title="Community and Communications">Community and Communications</a>
+      <a href="#">Knowledge</a>
+      <a href="#">Supplies</a>
+      <a href="#">Services</a>
+      <a href="#">Community</a>
+    </div>
+  </div>
+</body>
+
+</html>
